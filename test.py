@@ -101,6 +101,7 @@ print("hello world!!")
 
 # ///////////////////////////////////////////////////////
 # ////////////////////////////////////////////////////////
+# Lists
 
 # names = ['Rami', 'Sara', 'Nada', 'Mhamad', 'Salem']
 # # print(names[-1])
@@ -171,3 +172,128 @@ print("hello world!!")
 # arr_ages = [1, 2, 4, 3, 2, 1, 1, 2]
 # arr_ages.clear()
 # print(arr_ages)     # Result = []
+
+# ///////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////
+# Tuples
+
+# names = ('Rami', 'Sara', 'Nada', 'Mhamad', 'Salem')
+# print(names[0])
+# print(names[-1])
+
+# names = ('Rami', 'Sara', 'Nada', 'Mhamad', 'Salem')
+# for x in names:
+#     print(x)
+
+# numbers = (10, 20, 30, 40, 50)
+# total = 0
+# for x in numbers:
+#     total += x
+# print(total)
+
+# numbers = (10, 20, 30, 40, 50)
+# numbers2 = numbers[0:3]
+# print(numbers2)
+
+# arr1 = (1, 2, 3)
+# arr2 = (4, 5, 6)
+# arr3 = arr1 + arr2
+# print(arr3)
+
+# arr = ('Python',) * 3
+# print(arr)
+
+# names = ('Rami', 'Sara', 'Nada', 'Mhamad', 'Salem')
+# x = 'Sara'
+# print(x in names)
+
+# numbers = (10, 20, 30, 40, 50)
+# print(min(numbers))
+# print(max(numbers))
+
+# names = ('Rami', 'Sara', 'Nada', 'Mhamad', 'Salem')
+# names2 = tuple(names)
+# print(names2)
+
+# ///////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////
+# Sets
+
+# numbers = {10, 20, 30, 40, 50}
+# print(numbers)
+
+# names = {'Rami', 'Rami', 'Rami', 'Nada', 'Nada', 'Ahmad'}
+# print(names)
+
+# names = {'Rami', 'Nada', 'Ahmad'}
+# del names
+# print(names)
+
+# names = {'Rami', 'Nada', 'Ahmed'}
+# x = 'Ahmed'
+# print(x in names)
+
+# names = {'Rami', 'Nada', 'Ahmad'}
+# names.add('Khairallah')
+# print(names)
+
+# names = {'Rami', 'Nada', 'Ahmad'}
+# names.discard('Nada')          # Result = {'Rami', 'Ahmad'}
+# names.remove('Rami')           # Result = {'Nada', 'Ahmad'}
+# print(names)
+
+# names = {'Rami', 'Nada', 'Ahmad'}
+# names.clear()
+# print(names)
+
+# names = {'Rami', 'Nada', 'Ahmad'}
+# names2 = names.copy()
+# print(names2)
+
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# newSet = set1.difference(set2)
+# print(newSet)           # Result = {4, 5}
+
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# set1.difference_update(set2)
+# print(set1)           # Result = {4, 5}
+
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# newSet = set1.intersection(set2)
+# print(newSet)           # Result = {1, 2, 3}
+
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# newSet = set1.symmetric_difference(set2)
+# print(newSet)           # Result = {4, 5}
+
+# set1 = {1, 2, 3, 5, 8, 7}
+# set2 = {7, 2, 3, 5, 6, 1}
+# set3 = {3, 4, 5, 8, 7, 9}
+# newSet = set1.union(set2, set3)
+# print(newSet)           # Result = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+# set1.update(set2, set3)
+# print(set1)           # Result = {1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+# set1 = {1, 2, 3}
+# set2 = {1, 7}
+# set3 = {4, 5, 6}
+# print('set1 disjoint set2?', set1.isdisjoint(set2))    # False
+# print('set1 disjoint set3?', set1.isdisjoint(set3))    # True
+
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# print(set1.issuperset(set2))    # True
+# set1 = {1, 2, 3}
+# set2 = {1, 2, 3, 4, 5}
+# print(set1.issuperset(set2))    # False
+
+# set1 = {1, 2, 3}
+# set2 = {1, 2, 3, 4, 5}
+# print(set1.issubset(set2))    # True
+# set1 = {1, 2, 3, 4, 5}
+# set2 = {1, 2, 3}
+# print(set1.issubset(set2))    # False
