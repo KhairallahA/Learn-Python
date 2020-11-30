@@ -1,4 +1,4 @@
-print("hello world!!")
+print("hello world!")
 
 # language = [str] * 4
 # # هنا قمنا بوضع قيمة في كل عنصر فيها
@@ -297,3 +297,167 @@ print("hello world!!")
 # set1 = {1, 2, 3, 4, 5}
 # set2 = {1, 2, 3}
 # print(set1.issubset(set2))    # False
+
+# ///////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////
+# dict
+
+# data = {
+#     'id': 1,
+#     'name': 'Khairallah',
+#     'moblie': 7777777777
+# }
+# print(data)
+# print(data['name'])
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# print(data[1])
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# for key in data:
+#     print(key)
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# for key in data:
+#     print(data[key])
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# data[4] = 'Author'
+# print(data)
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# data[3] = 'Subscriber'
+# print(data)           # Result = {1: 'Admin', 2: 'Editor', 3: 'Subscriber'}
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# del data[3]
+# print(data)           # Result = {1: 'Admin', 2: 'Editor'}
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# print(3 in data)      # True
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# print(len(data))
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# print(data.popitem())         # Result = (3, 'Reader')
+
+# data = {
+#     1: 'Admin',
+#     2: 'Editor',
+#     3: 'Reader'
+# }
+# print(data.keys())           # Result = dict_keys([1, 2, 3])
+# print(data.values())         # Result = dict_values(['Admin', 'Editor', 'Reader'])
+# print(data.items())         # Result = dict_items([(1, 'Admin'), (2, 'Editor'), (3, 'Reader')])
+
+# ///////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////
+# Function
+
+# def my_function():
+#     print("hello")
+# my_function()
+
+# def greeting(name):
+#     print('hello ' + name)
+# #1
+# user = 'Khairallah'
+# greeting(user)
+# #2
+# name = 'Khairallah'
+# greeting(name)
+# #3
+# greeting('Khairallah')
+
+# def get_sum(a, b):
+#     return a + b
+# #1
+# x = get_sum(3, 5)
+# print(x)
+# #2
+# print(get_sum(3, 7))
+
+# def print_language(language='English'):
+#     print('Your language is: ', language)
+# print_language()
+# print_language('Arabic')
+
+# def print_info(name, salary):
+#     print('Name: ', name)
+#     print('Salary: ', salary)
+#     print('--------------------------')
+# print_info('Khairallah', 1500)
+# print_info(salary= 2000, name = 'Khaled')
+
+# def print_args(*args):
+#     for e in args:
+#         print(e)
+# print_args(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+# def print_average(*values):
+#     print(sum(values) + len(values))   #Result = 14
+# print_average(1, 2, 3, 4)
+
+# def print_user_average(user, *notes):
+#     avg = sum(notes) + len(notes)
+#     print('You are:', user, 'is:', avg)
+# print_user_average('Khairallah', 1, 2, 3, 4)
+
+# x = 1
+# def test():
+#     print('Global x:', x)
+# test()
+
+# x = 1
+# def test():
+#     x = 5
+#     print("Local x:", x)   # Result = Local x: 5
+# test()
+# print("Global x:", x)   # Result = Global x: 1
+
+# x = 1
+# def test():
+#     global x
+#     x = 5
+# test()
+# print("Global x:", x)   # Result = Global x: 5
+
+# total_pay = lambda price, tax: price + tax
+# print(total_pay(500, 40))   # Result = 540
